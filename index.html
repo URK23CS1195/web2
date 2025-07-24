@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order - Pizza Express</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+
+    <!-- Header -->
+    <header style="background-color: #e63946; color: white; text-align: center; padding: 30px;">
+        <h1>🍕 Pizza Express</h1>
+        <p>Fresh. Fast. Delicious.</p>
+    </header>
+
+    <!-- Form Section -->
+    <section style="padding: 30px;">
+        <h2 style="color: #333;">Online Pizza Order Form</h2>
+        <p>Please fill out the form below to place your pizza order.</p>
+
+        <form action="#" method="post">
+
+            <!-- Customer Info -->
+            <fieldset style="padding: 20px; border: 1px solid #ccc;">
+                <legend><b>Customer Details</b></legend>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="address">Delivery Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+            </fieldset>
+            <br>
+
+            <!-- Pizza Selection -->
+            <fieldset style="padding: 20px; border: 1px solid #ccc;">
+                <legend><b>Pizza Selection</b></legend>
+
+                <label for="pizza">Choose Your Pizza:</label><br>
+                <select id="pizza" name="pizza" required>
+                    <option value="">--Select Pizza--</option>
+                    <option value="Margherita">Margherita - ₹299</option>
+                    <option value="Farmhouse">Farmhouse - ₹399</option>
+                    <option value="ChickenFiesta">Chicken Fiesta - ₹499</option>
+                    <option value="PaneerTikka">Paneer Tikka - ₹459</option>
+                </select><br><br>
+
+                <label><b>Size:</b></label><br>
+                <input type="radio" name="size" value="Small" required> Small<br>
+                <input type="radio" name="size" value="Medium"> Medium<br>
+                <input type="radio" name="size" value="Large"> Large<br><br>
+
+                <label><b>Extra Toppings:</b></label><br>
+                <input type="checkbox" name="toppings" value="Cheese"> Extra Cheese<br>
+                <input type="checkbox" name="toppings" value="Olives"> Olives<br>
+                <input type="checkbox" name="toppings" value="Jalapenos"> Jalapenos<br>
+                <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
+            </fieldset>
+            <br>
+
+            <!-- Payment & Instructions -->
+            <fieldset style="padding: 20px; border: 1px solid #ccc;">
+                <legend><b>Payment & Delivery</b></legend>
+
+                <label for="payment">Payment Method:</label><br>
+                <select id="payment" name="payment" required>
+                    <option value="">--Select Payment Method--</option>
+                    <option value="COD">Cash on Delivery</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Card">Credit/Debit Card</option>
+                </select><br><br>
+
+                <label for="instructions">Special Instructions:</label><br>
+                <textarea id="instructions" name="instructions" rows="3" cols="50" placeholder="e.g., No onion, extra crispy..."></textarea>
+            </fieldset>
+            <br>
+
+            <!-- Submit -->
+            <input type="submit" value="Place Order" style="padding: 10px 25px; background-color: #e63946; color: white; border: none; cursor: pointer;">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #e63946; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>&copy; 2025 Pizza Express | All rights reserved</p>
+        <p><a href="mailto:support@pizzaexpress.com" style="color: white;">support@pizzaexpress.com</a></p>
+    </footer>
+
+</body>
+</html>
